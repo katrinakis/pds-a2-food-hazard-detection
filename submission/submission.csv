@@ -1,0 +1,566 @@
+,hazard-category,product-category
+0,biological,"meat, egg and dairy products"
+1,biological,"meat, egg and dairy products"
+2,foreign bodies,"meat, egg and dairy products"
+3,allergens,"meat, egg and dairy products"
+4,foreign bodies,"meat, egg and dairy products"
+5,foreign bodies,"meat, egg and dairy products"
+6,biological,"meat, egg and dairy products"
+7,foreign bodies,cereals and bakery products
+8,foreign bodies,"meat, egg and dairy products"
+9,biological,cereals and bakery products
+10,foreign bodies,"meat, egg and dairy products"
+11,chemical,cereals and bakery products
+12,chemical,"meat, egg and dairy products"
+13,chemical,"meat, egg and dairy products"
+14,foreign bodies,"meat, egg and dairy products"
+15,chemical,ices and desserts
+16,allergens,cereals and bakery products
+17,biological,"meat, egg and dairy products"
+18,biological,"meat, egg and dairy products"
+19,biological,"meat, egg and dairy products"
+20,biological,cereals and bakery products
+21,allergens,"meat, egg and dairy products"
+22,foreign bodies,"meat, egg and dairy products"
+23,allergens,"meat, egg and dairy products"
+24,allergens,"meat, egg and dairy products"
+25,foreign bodies,"meat, egg and dairy products"
+26,allergens,"meat, egg and dairy products"
+27,biological,"meat, egg and dairy products"
+28,allergens,"meat, egg and dairy products"
+29,allergens,"meat, egg and dairy products"
+30,biological,"meat, egg and dairy products"
+31,biological,"meat, egg and dairy products"
+32,allergens,cereals and bakery products
+33,chemical,"meat, egg and dairy products"
+34,allergens,"meat, egg and dairy products"
+35,foreign bodies,"meat, egg and dairy products"
+36,foreign bodies,"meat, egg and dairy products"
+37,foreign bodies,"meat, egg and dairy products"
+38,chemical,"meat, egg and dairy products"
+39,allergens,"meat, egg and dairy products"
+40,allergens,"meat, egg and dairy products"
+41,other hazard,"meat, egg and dairy products"
+42,biological,"meat, egg and dairy products"
+43,biological,"nuts, nut products and seeds"
+44,foreign bodies,prepared dishes and snacks
+45,allergens,cereals and bakery products
+46,biological,"meat, egg and dairy products"
+47,allergens,"meat, egg and dairy products"
+48,fraud,prepared dishes and snacks
+49,foreign bodies,"meat, egg and dairy products"
+50,foreign bodies,cereals and bakery products
+51,foreign bodies,"meat, egg and dairy products"
+52,foreign bodies,"meat, egg and dairy products"
+53,foreign bodies,"meat, egg and dairy products"
+54,foreign bodies,prepared dishes and snacks
+55,allergens,"meat, egg and dairy products"
+56,allergens,"meat, egg and dairy products"
+57,biological,"meat, egg and dairy products"
+58,chemical,"meat, egg and dairy products"
+59,foreign bodies,"meat, egg and dairy products"
+60,foreign bodies,herbs and spices
+61,biological,"nuts, nut products and seeds"
+62,fraud,"meat, egg and dairy products"
+63,biological,"cocoa and cocoa preparations, coffee and tea"
+64,biological,"meat, egg and dairy products"
+65,biological,"meat, egg and dairy products"
+66,biological,"meat, egg and dairy products"
+67,biological,"meat, egg and dairy products"
+68,foreign bodies,prepared dishes and snacks
+69,foreign bodies,"meat, egg and dairy products"
+70,fraud,"meat, egg and dairy products"
+71,other hazard,"meat, egg and dairy products"
+72,fraud,"meat, egg and dairy products"
+73,biological,fruits and vegetables
+74,biological,cereals and bakery products
+75,biological,"meat, egg and dairy products"
+76,allergens,"meat, egg and dairy products"
+77,allergens,"meat, egg and dairy products"
+78,biological,"meat, egg and dairy products"
+79,other hazard,"meat, egg and dairy products"
+80,foreign bodies,"meat, egg and dairy products"
+81,biological,prepared dishes and snacks
+82,allergens,seafood
+83,chemical,cereals and bakery products
+84,biological,"meat, egg and dairy products"
+85,biological,cereals and bakery products
+86,allergens,"meat, egg and dairy products"
+87,allergens,confectionery
+88,biological,"meat, egg and dairy products"
+89,biological,non-alcoholic beverages
+90,biological,"meat, egg and dairy products"
+91,allergens,"meat, egg and dairy products"
+92,allergens,"meat, egg and dairy products"
+93,foreign bodies,"meat, egg and dairy products"
+94,allergens,"meat, egg and dairy products"
+95,allergens,"soups, broths, sauces and condiments"
+96,foreign bodies,"meat, egg and dairy products"
+97,biological,"meat, egg and dairy products"
+98,biological,fruits and vegetables
+99,allergens,"meat, egg and dairy products"
+100,biological,cereals and bakery products
+101,biological,"meat, egg and dairy products"
+102,biological,"meat, egg and dairy products"
+103,biological,prepared dishes and snacks
+104,allergens,"cocoa and cocoa preparations, coffee and tea"
+105,biological,"meat, egg and dairy products"
+106,allergens,"meat, egg and dairy products"
+107,organoleptic aspects,"meat, egg and dairy products"
+108,allergens,"meat, egg and dairy products"
+109,allergens,seafood
+110,foreign bodies,"meat, egg and dairy products"
+111,biological,seafood
+112,allergens,"meat, egg and dairy products"
+113,allergens,seafood
+114,biological,ices and desserts
+115,allergens,"meat, egg and dairy products"
+116,biological,cereals and bakery products
+117,biological,"meat, egg and dairy products"
+118,biological,"cocoa and cocoa preparations, coffee and tea"
+119,biological,"cocoa and cocoa preparations, coffee and tea"
+120,biological,cereals and bakery products
+121,biological,"meat, egg and dairy products"
+122,biological,"meat, egg and dairy products"
+123,biological,seafood
+124,biological,cereals and bakery products
+125,allergens,"meat, egg and dairy products"
+126,allergens,seafood
+127,chemical,"meat, egg and dairy products"
+128,fraud,"meat, egg and dairy products"
+129,foreign bodies,"meat, egg and dairy products"
+130,biological,"meat, egg and dairy products"
+131,biological,cereals and bakery products
+132,other hazard,seafood
+133,allergens,"meat, egg and dairy products"
+134,allergens,"meat, egg and dairy products"
+135,allergens,"meat, egg and dairy products"
+136,allergens,"meat, egg and dairy products"
+137,biological,"meat, egg and dairy products"
+138,fraud,"meat, egg and dairy products"
+139,allergens,"meat, egg and dairy products"
+140,chemical,cereals and bakery products
+141,other hazard,"meat, egg and dairy products"
+142,biological,"meat, egg and dairy products"
+143,allergens,prepared dishes and snacks
+144,other hazard,seafood
+145,allergens,non-alcoholic beverages
+146,fraud,seafood
+147,foreign bodies,"meat, egg and dairy products"
+148,allergens,"meat, egg and dairy products"
+149,biological,prepared dishes and snacks
+150,biological,"meat, egg and dairy products"
+151,biological,"meat, egg and dairy products"
+152,allergens,"meat, egg and dairy products"
+153,allergens,"meat, egg and dairy products"
+154,fraud,"cocoa and cocoa preparations, coffee and tea"
+155,allergens,"meat, egg and dairy products"
+156,allergens,prepared dishes and snacks
+157,allergens,prepared dishes and snacks
+158,allergens,prepared dishes and snacks
+159,allergens,"meat, egg and dairy products"
+160,allergens,prepared dishes and snacks
+161,biological,"meat, egg and dairy products"
+162,allergens,"meat, egg and dairy products"
+163,biological,confectionery
+164,biological,"meat, egg and dairy products"
+165,fraud,"meat, egg and dairy products"
+166,chemical,cereals and bakery products
+167,allergens,cereals and bakery products
+168,biological,"meat, egg and dairy products"
+169,biological,fruits and vegetables
+170,foreign bodies,cereals and bakery products
+171,allergens,"meat, egg and dairy products"
+172,biological,"meat, egg and dairy products"
+173,biological,"meat, egg and dairy products"
+174,allergens,"meat, egg and dairy products"
+175,fraud,"meat, egg and dairy products"
+176,allergens,"meat, egg and dairy products"
+177,biological,"meat, egg and dairy products"
+178,allergens,"meat, egg and dairy products"
+179,foreign bodies,"meat, egg and dairy products"
+180,foreign bodies,"meat, egg and dairy products"
+181,biological,"dietetic foods, food supplements, fortified foods"
+182,biological,cereals and bakery products
+183,biological,"meat, egg and dairy products"
+184,biological,cereals and bakery products
+185,foreign bodies,cereals and bakery products
+186,fraud,"meat, egg and dairy products"
+187,allergens,"meat, egg and dairy products"
+188,allergens,cereals and bakery products
+189,biological,"cocoa and cocoa preparations, coffee and tea"
+190,biological,"meat, egg and dairy products"
+191,biological,"meat, egg and dairy products"
+192,biological,"meat, egg and dairy products"
+193,biological,cereals and bakery products
+194,allergens,confectionery
+195,allergens,"meat, egg and dairy products"
+196,allergens,"meat, egg and dairy products"
+197,allergens,"meat, egg and dairy products"
+198,biological,"meat, egg and dairy products"
+199,allergens,"meat, egg and dairy products"
+200,allergens,"meat, egg and dairy products"
+201,allergens,"meat, egg and dairy products"
+202,foreign bodies,"meat, egg and dairy products"
+203,allergens,"meat, egg and dairy products"
+204,allergens,"meat, egg and dairy products"
+205,allergens,"meat, egg and dairy products"
+206,biological,"meat, egg and dairy products"
+207,biological,"meat, egg and dairy products"
+208,biological,"meat, egg and dairy products"
+209,biological,"meat, egg and dairy products"
+210,biological,"meat, egg and dairy products"
+211,allergens,"meat, egg and dairy products"
+212,biological,"meat, egg and dairy products"
+213,biological,"meat, egg and dairy products"
+214,biological,"meat, egg and dairy products"
+215,allergens,"meat, egg and dairy products"
+216,biological,"meat, egg and dairy products"
+217,biological,"dietetic foods, food supplements, fortified foods"
+218,allergens,prepared dishes and snacks
+219,fraud,"meat, egg and dairy products"
+220,allergens,cereals and bakery products
+221,biological,"meat, egg and dairy products"
+222,allergens,"nuts, nut products and seeds"
+223,allergens,cereals and bakery products
+224,foreign bodies,"meat, egg and dairy products"
+225,foreign bodies,"meat, egg and dairy products"
+226,fraud,"meat, egg and dairy products"
+227,biological,"meat, egg and dairy products"
+228,biological,cereals and bakery products
+229,biological,cereals and bakery products
+230,allergens,herbs and spices
+231,biological,"meat, egg and dairy products"
+232,foreign bodies,"meat, egg and dairy products"
+233,allergens,cereals and bakery products
+234,other hazard,"meat, egg and dairy products"
+235,allergens,"meat, egg and dairy products"
+236,biological,"meat, egg and dairy products"
+237,fraud,"meat, egg and dairy products"
+238,allergens,"meat, egg and dairy products"
+239,allergens,"meat, egg and dairy products"
+240,biological,"meat, egg and dairy products"
+241,biological,"meat, egg and dairy products"
+242,organoleptic aspects,"meat, egg and dairy products"
+243,biological,"meat, egg and dairy products"
+244,biological,"meat, egg and dairy products"
+245,allergens,non-alcoholic beverages
+246,allergens,fruits and vegetables
+247,allergens,"meat, egg and dairy products"
+248,biological,"meat, egg and dairy products"
+249,biological,"meat, egg and dairy products"
+250,foreign bodies,cereals and bakery products
+251,biological,"meat, egg and dairy products"
+252,allergens,"meat, egg and dairy products"
+253,biological,cereals and bakery products
+254,biological,"meat, egg and dairy products"
+255,foreign bodies,"meat, egg and dairy products"
+256,chemical,cereals and bakery products
+257,chemical,"meat, egg and dairy products"
+258,allergens,confectionery
+259,biological,cereals and bakery products
+260,biological,"meat, egg and dairy products"
+261,biological,confectionery
+262,biological,"meat, egg and dairy products"
+263,biological,"meat, egg and dairy products"
+264,biological,"dietetic foods, food supplements, fortified foods"
+265,biological,ices and desserts
+266,biological,"meat, egg and dairy products"
+267,biological,prepared dishes and snacks
+268,allergens,"meat, egg and dairy products"
+269,foreign bodies,cereals and bakery products
+270,allergens,"meat, egg and dairy products"
+271,allergens,"meat, egg and dairy products"
+272,allergens,"meat, egg and dairy products"
+273,foreign bodies,"meat, egg and dairy products"
+274,other hazard,"meat, egg and dairy products"
+275,biological,"dietetic foods, food supplements, fortified foods"
+276,fraud,"meat, egg and dairy products"
+277,allergens,"meat, egg and dairy products"
+278,allergens,"meat, egg and dairy products"
+279,foreign bodies,"meat, egg and dairy products"
+280,allergens,"meat, egg and dairy products"
+281,allergens,cereals and bakery products
+282,allergens,"meat, egg and dairy products"
+283,allergens,cereals and bakery products
+284,chemical,"meat, egg and dairy products"
+285,biological,"meat, egg and dairy products"
+286,allergens,"meat, egg and dairy products"
+287,allergens,"meat, egg and dairy products"
+288,allergens,"cocoa and cocoa preparations, coffee and tea"
+289,biological,"meat, egg and dairy products"
+290,biological,cereals and bakery products
+291,allergens,"meat, egg and dairy products"
+292,allergens,"meat, egg and dairy products"
+293,fraud,"meat, egg and dairy products"
+294,allergens,"meat, egg and dairy products"
+295,foreign bodies,"meat, egg and dairy products"
+296,allergens,"meat, egg and dairy products"
+297,allergens,"meat, egg and dairy products"
+298,allergens,"meat, egg and dairy products"
+299,fraud,"meat, egg and dairy products"
+300,allergens,cereals and bakery products
+301,biological,fruits and vegetables
+302,allergens,cereals and bakery products
+303,biological,fruits and vegetables
+304,foreign bodies,"meat, egg and dairy products"
+305,allergens,"meat, egg and dairy products"
+306,organoleptic aspects,"meat, egg and dairy products"
+307,other hazard,cereals and bakery products
+308,biological,"meat, egg and dairy products"
+309,chemical,"meat, egg and dairy products"
+310,biological,"meat, egg and dairy products"
+311,allergens,herbs and spices
+312,biological,cereals and bakery products
+313,allergens,"meat, egg and dairy products"
+314,other hazard,cereals and bakery products
+315,biological,fruits and vegetables
+316,biological,"meat, egg and dairy products"
+317,allergens,"soups, broths, sauces and condiments"
+318,biological,"cocoa and cocoa preparations, coffee and tea"
+319,foreign bodies,"meat, egg and dairy products"
+320,allergens,"meat, egg and dairy products"
+321,packaging defect,cereals and bakery products
+322,foreign bodies,"meat, egg and dairy products"
+323,foreign bodies,cereals and bakery products
+324,fraud,"meat, egg and dairy products"
+325,chemical,"meat, egg and dairy products"
+326,biological,cereals and bakery products
+327,fraud,"meat, egg and dairy products"
+328,biological,"meat, egg and dairy products"
+329,allergens,cereals and bakery products
+330,fraud,non-alcoholic beverages
+331,allergens,"meat, egg and dairy products"
+332,allergens,"meat, egg and dairy products"
+333,biological,cereals and bakery products
+334,biological,cereals and bakery products
+335,biological,"meat, egg and dairy products"
+336,allergens,cereals and bakery products
+337,biological,prepared dishes and snacks
+338,allergens,"meat, egg and dairy products"
+339,foreign bodies,"meat, egg and dairy products"
+340,allergens,"meat, egg and dairy products"
+341,fraud,cereals and bakery products
+342,chemical,"meat, egg and dairy products"
+343,fraud,cereals and bakery products
+344,allergens,"meat, egg and dairy products"
+345,organoleptic aspects,"meat, egg and dairy products"
+346,allergens,seafood
+347,allergens,"meat, egg and dairy products"
+348,biological,fruits and vegetables
+349,allergens,"meat, egg and dairy products"
+350,allergens,"meat, egg and dairy products"
+351,allergens,cereals and bakery products
+352,foreign bodies,cereals and bakery products
+353,biological,"meat, egg and dairy products"
+354,allergens,"meat, egg and dairy products"
+355,allergens,"meat, egg and dairy products"
+356,foreign bodies,other food product / mixed
+357,allergens,fruits and vegetables
+358,organoleptic aspects,"meat, egg and dairy products"
+359,foreign bodies,"meat, egg and dairy products"
+360,foreign bodies,"meat, egg and dairy products"
+361,allergens,"meat, egg and dairy products"
+362,allergens,"meat, egg and dairy products"
+363,biological,cereals and bakery products
+364,allergens,"meat, egg and dairy products"
+365,allergens,cereals and bakery products
+366,fraud,"meat, egg and dairy products"
+367,allergens,"meat, egg and dairy products"
+368,allergens,"meat, egg and dairy products"
+369,biological,"meat, egg and dairy products"
+370,allergens,cereals and bakery products
+371,foreign bodies,confectionery
+372,biological,fruits and vegetables
+373,allergens,"meat, egg and dairy products"
+374,biological,cereals and bakery products
+375,biological,"meat, egg and dairy products"
+376,allergens,alcoholic beverages
+377,biological,"meat, egg and dairy products"
+378,allergens,"meat, egg and dairy products"
+379,allergens,"meat, egg and dairy products"
+380,biological,fruits and vegetables
+381,foreign bodies,"nuts, nut products and seeds"
+382,allergens,confectionery
+383,fraud,cereals and bakery products
+384,allergens,"meat, egg and dairy products"
+385,allergens,herbs and spices
+386,foreign bodies,"meat, egg and dairy products"
+387,biological,"meat, egg and dairy products"
+388,chemical,"cocoa and cocoa preparations, coffee and tea"
+389,allergens,confectionery
+390,packaging defect,cereals and bakery products
+391,allergens,"meat, egg and dairy products"
+392,allergens,"meat, egg and dairy products"
+393,allergens,"meat, egg and dairy products"
+394,foreign bodies,"meat, egg and dairy products"
+395,allergens,"meat, egg and dairy products"
+396,allergens,"meat, egg and dairy products"
+397,allergens,"meat, egg and dairy products"
+398,foreign bodies,fruits and vegetables
+399,biological,"meat, egg and dairy products"
+400,allergens,"meat, egg and dairy products"
+401,allergens,"meat, egg and dairy products"
+402,biological,cereals and bakery products
+403,allergens,"meat, egg and dairy products"
+404,fraud,"meat, egg and dairy products"
+405,biological,confectionery
+406,biological,"meat, egg and dairy products"
+407,biological,cereals and bakery products
+408,biological,fruits and vegetables
+409,allergens,"meat, egg and dairy products"
+410,biological,"meat, egg and dairy products"
+411,allergens,"meat, egg and dairy products"
+412,biological,"meat, egg and dairy products"
+413,biological,confectionery
+414,biological,"meat, egg and dairy products"
+415,allergens,cereals and bakery products
+416,allergens,"meat, egg and dairy products"
+417,biological,fruits and vegetables
+418,allergens,"meat, egg and dairy products"
+419,biological,"meat, egg and dairy products"
+420,biological,"cocoa and cocoa preparations, coffee and tea"
+421,allergens,"meat, egg and dairy products"
+422,biological,confectionery
+423,biological,fruits and vegetables
+424,foreign bodies,"meat, egg and dairy products"
+425,foreign bodies,"meat, egg and dairy products"
+426,allergens,"meat, egg and dairy products"
+427,allergens,"meat, egg and dairy products"
+428,biological,fruits and vegetables
+429,allergens,cereals and bakery products
+430,allergens,confectionery
+431,fraud,cereals and bakery products
+432,allergens,confectionery
+433,allergens,confectionery
+434,allergens,confectionery
+435,allergens,"cocoa and cocoa preparations, coffee and tea"
+436,allergens,"meat, egg and dairy products"
+437,biological,"meat, egg and dairy products"
+438,biological,"dietetic foods, food supplements, fortified foods"
+439,allergens,"meat, egg and dairy products"
+440,allergens,"meat, egg and dairy products"
+441,biological,"meat, egg and dairy products"
+442,chemical,cereals and bakery products
+443,fraud,"meat, egg and dairy products"
+444,packaging defect,herbs and spices
+445,biological,"meat, egg and dairy products"
+446,fraud,"meat, egg and dairy products"
+447,fraud,"meat, egg and dairy products"
+448,allergens,cereals and bakery products
+449,allergens,"meat, egg and dairy products"
+450,biological,"meat, egg and dairy products"
+451,biological,fruits and vegetables
+452,allergens,"meat, egg and dairy products"
+453,allergens,"meat, egg and dairy products"
+454,biological,cereals and bakery products
+455,biological,fruits and vegetables
+456,biological,seafood
+457,allergens,"meat, egg and dairy products"
+458,biological,cereals and bakery products
+459,allergens,"meat, egg and dairy products"
+460,allergens,"meat, egg and dairy products"
+461,biological,fruits and vegetables
+462,foreign bodies,cereals and bakery products
+463,allergens,confectionery
+464,allergens,"meat, egg and dairy products"
+465,biological,"meat, egg and dairy products"
+466,foreign bodies,"cocoa and cocoa preparations, coffee and tea"
+467,chemical,"meat, egg and dairy products"
+468,foreign bodies,"meat, egg and dairy products"
+469,other hazard,cereals and bakery products
+470,biological,cereals and bakery products
+471,chemical,"meat, egg and dairy products"
+472,biological,"meat, egg and dairy products"
+473,allergens,"meat, egg and dairy products"
+474,allergens,"meat, egg and dairy products"
+475,allergens,herbs and spices
+476,biological,cereals and bakery products
+477,chemical,herbs and spices
+478,foreign bodies,"meat, egg and dairy products"
+479,allergens,"meat, egg and dairy products"
+480,allergens,"meat, egg and dairy products"
+481,allergens,cereals and bakery products
+482,foreign bodies,"nuts, nut products and seeds"
+483,biological,confectionery
+484,allergens,cereals and bakery products
+485,allergens,"meat, egg and dairy products"
+486,allergens,"meat, egg and dairy products"
+487,foreign bodies,fruits and vegetables
+488,allergens,"meat, egg and dairy products"
+489,chemical,"meat, egg and dairy products"
+490,biological,"dietetic foods, food supplements, fortified foods"
+491,allergens,cereals and bakery products
+492,biological,"meat, egg and dairy products"
+493,biological,"meat, egg and dairy products"
+494,allergens,"meat, egg and dairy products"
+495,allergens,"meat, egg and dairy products"
+496,allergens,fruits and vegetables
+497,allergens,"meat, egg and dairy products"
+498,allergens,cereals and bakery products
+499,allergens,"meat, egg and dairy products"
+500,allergens,"meat, egg and dairy products"
+501,biological,"meat, egg and dairy products"
+502,foreign bodies,"meat, egg and dairy products"
+503,organoleptic aspects,"cocoa and cocoa preparations, coffee and tea"
+504,allergens,fruits and vegetables
+505,foreign bodies,confectionery
+506,biological,"meat, egg and dairy products"
+507,allergens,cereals and bakery products
+508,allergens,confectionery
+509,biological,"meat, egg and dairy products"
+510,fraud,"cocoa and cocoa preparations, coffee and tea"
+511,chemical,"meat, egg and dairy products"
+512,biological,fruits and vegetables
+513,allergens,cereals and bakery products
+514,chemical,cereals and bakery products
+515,allergens,"meat, egg and dairy products"
+516,fraud,cereals and bakery products
+517,foreign bodies,cereals and bakery products
+518,biological,cereals and bakery products
+519,fraud,"meat, egg and dairy products"
+520,biological,"meat, egg and dairy products"
+521,biological,fruits and vegetables
+522,chemical,cereals and bakery products
+523,biological,fruits and vegetables
+524,fraud,"meat, egg and dairy products"
+525,chemical,cereals and bakery products
+526,biological,"meat, egg and dairy products"
+527,allergens,"meat, egg and dairy products"
+528,biological,cereals and bakery products
+529,allergens,"meat, egg and dairy products"
+530,allergens,cereals and bakery products
+531,biological,cereals and bakery products
+532,biological,"nuts, nut products and seeds"
+533,allergens,"meat, egg and dairy products"
+534,biological,"meat, egg and dairy products"
+535,allergens,cereals and bakery products
+536,other hazard,cereals and bakery products
+537,biological,"meat, egg and dairy products"
+538,foreign bodies,"meat, egg and dairy products"
+539,biological,cereals and bakery products
+540,chemical,"meat, egg and dairy products"
+541,organoleptic aspects,fruits and vegetables
+542,chemical,herbs and spices
+543,allergens,"meat, egg and dairy products"
+544,biological,"meat, egg and dairy products"
+545,foreign bodies,cereals and bakery products
+546,other hazard,confectionery
+547,biological,confectionery
+548,allergens,"meat, egg and dairy products"
+549,allergens,"meat, egg and dairy products"
+550,allergens,"meat, egg and dairy products"
+551,biological,cereals and bakery products
+552,biological,cereals and bakery products
+553,biological,"meat, egg and dairy products"
+554,allergens,cereals and bakery products
+555,allergens,"meat, egg and dairy products"
+556,biological,"meat, egg and dairy products"
+557,chemical,"meat, egg and dairy products"
+558,biological,herbs and spices
+559,chemical,cereals and bakery products
+560,allergens,"meat, egg and dairy products"
+561,allergens,"meat, egg and dairy products"
+562,foreign bodies,confectionery
+563,allergens,"meat, egg and dairy products"
+564,allergens,"meat, egg and dairy products"
