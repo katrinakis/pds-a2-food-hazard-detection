@@ -30,9 +30,11 @@ Submit the link to your GitHub project. Ensure that version control is used thro
 | RANDOM | 0.063 | 0.031 | 0.004 | 0.0 |
 | TF-IDF-$k$=1-NN | 0.557 | 0.455 | 0.293 | 0.166 |
 | TF-IDF-SVM$^*$ | 0.617 | 0.565 | 0.323 | 0.205 |
-| TF-IDF-XGBOOST | ---: | ---: | ---: | ---: |
+| TF-IDF-XGBOOST | 0.468 | 0.376 | 0.123 | 0.019 |
 
 $^*$ SVM C=10, gamma=0.1 and rbf kernel
+
+In TF-IDF-XGBOOST a different learning rate was used for `hazard-category` and `product-category` than in `hazard` and `product`.
 
 
 ## Results
@@ -64,21 +66,27 @@ The data consists of 10 columns:
 * The steps taken are available in the notebook under section Preprocessing.
 * If you want to use the lemmatized text and don't want to rerun the process, skip to the last cell of this section.
 
-## Setup
-To test an algorithm on one train-test split can be misleading, as the 
 
 ## Title classification
 
 ### 1. k-NN
 
-k=1
+For k-NN I used 5-fold monte carlo cross validation to estimate the macro F1 score. Here are some visualizations of the results:
+
+**k=1**
+
 ![alt text](image.png)
 
-k=7
+**k=7**
+
 ![alt text](image-1.png)
 
+Here is a visualization of the behavior of k-NN for different $k$.
 k-NN for $k \in \{1,2,...,7\}$
+
 ![alt text](image-2.png)
+
+**Conclusions**
 * First of all, we notice $k=1$ generally does better than the rest.
 
 * Especially in the `hazard` and `product` labels, where the score decreases as $k$ increases. That is normal considering the severe class imbalance. For categories with as little as one example, $k>1$ will result in bias towards majority classes, decreasing the macro-$F_1$ score.
@@ -122,6 +130,8 @@ Outer Fold 1: Best Parameters: {'scaler': None, 'svm__C': 10, 'svm__class_weight
 Outer Fold 2: Best Parameters: {'scaler': MaxAbsScaler(), 'svm__C': 1, 'svm__class_weight': None, 'svm__kernel': 'linear'}
 Outer Fold 3: Best Parameters: {'scaler': MaxAbsScaler(), 'svm__C': 10, 'svm__class_weight': None, 'svm__gamma': 0.1, 'svm__kernel': 'rbf'}
 
+**Observations**
+
 One thing all folds agree on is `class_weight=None`, which is surprising, since `'balanced'` forces the model to pay attention to minority classes, and *should* lead to an improved macro F1 score. 
 
 Another is `gamma=0.1`, for `rbf` kernels. 
@@ -131,16 +141,17 @@ In two cases out of three:
 * C = 10, but with different kernels
 * `kernel='rbf'`, but with different scalings.
 
-Conclusion:
+**Conclusion**:
 * `C=10` does well with rbf kernels, while `C=1` with linear kernels
 * `MaxAbsScaler()` helps the linear kernel(?), but not necessarily the rbf kernel.
 * `class_weight` should remain `None` 
 * `gamma` is set to 0.1 for rbf kernels
 
+**Comparing SVMs to KNN**
 For `HAZARD-CATEGORY`:
 ![alt text](image-3.png)
 
-#### SVMs vs k-NN, k=1
+**SVMs vs k-NN, k=1**
 ![alt text](image-4.png)
 
 So SVMs were an improvement. 
@@ -150,7 +161,9 @@ So SVMs were an improvement.
 
 ### 3. XGBoost
 
-Initializing an instance to gauge how it goes:
+I began a bit naively by initializing a classifier with sort of random parameters to see how it does.
+In order for the classifier to run, I also applied stratification and also removed all classes with less than two examples.
+
 ```
 clf = XGBClassifier(tree_method='hist',
                     n_jobs=-1,
@@ -160,11 +173,20 @@ clf = XGBClassifier(tree_method='hist',
                     objective='multi:softmax',
                 )
 ```
-Confusion matrix
+
+Here is the overall score for this model:
+| | `hazard-category` | `product-category` | `hazard` | `product` |
+| ---: | ---: | ---: | ---: | ---: |
+| **mean** | 0.468 | 0.376 | 0.104 | 0.003 |
+| **max**  | 0.520 | 0.394 | 0.123 | 0.007 |
+
+Here is a more analytical description of the model behavior for `hazard-category`.
+
+**Confusion matrix**
 
 ![alt text](image-5.png)
 
-Classification report
+**Classification report**
 
 |  | precision | recall | f1-score | support |
 | ---: | ---: | ---: | ---: | ---: |
@@ -191,12 +213,18 @@ model = xgb.XGBClassifier(
     njobs=-1
 )
 ```
+Here is the overall score for this model:
+| | `hazard-category` | `product-category` | `hazard` | `product` |
+| ---: | ---: | ---: | ---: | ---: |
+| **mean** | 0.440 | 0.369 | 0.123 | 0.019 |
+| **max**  | 0.469 | 0.392 | 0.127 | 0.022 |
 
-Accuracy: 0.8112094395280236
+While not a global improvement, the scores did improve for `hazard` and `product`.
+Here is a more analytical description of the model behavior for `hazard-category`.
 
 ![alt text](image-6.png)
 
-Confusion matrix
+**Confusion matrix**
 
 ![alt text](image-7.png)
 
@@ -204,9 +232,14 @@ The second model achieved higher accuracy (0.81 vs 0.71) but lower macro F1 scor
 
 But this is just an observation, as infering which model does better we would need to measure the performance of both using cross validation over multiple folds.
 
-#### Using SMOTE to handle class imbalance (oversamlping)
+
+#### Using SMOTE to handle class imbalance for Hazard category
 
 **SMOTE** (Synthetic Minority Oversampling Technique) is a method used to address class imbalance by **generating synthetic examples for the minority class**. The motivation for using SMOTE is to improve model performance on imbalanced datasets by providing the model with more balanced training data, which helps it learn the characteristics of underrepresented classes effectively.
+
+* To use it we must install the package.
+* The Pipeline was removed because SMOTE cannot be part of a Pipeline (it works on the fully vectorized data).
+* Instead, the steps are handled manually in sequence: Vectorization → SMOTE → Model fitting.
 
 Accuracy: 0.816125860373648
 
@@ -219,3 +252,10 @@ We can see how SMOTE made the training set balanced, even for classes with one e
 ![alt text](image-9.png)
 
 But did it improve performance? Yes! The macro average jumped to 0.60!
+
+However the results from this model did not do well in the competition, so I used my best SVM instead.
+
+## Text classification
+
+### 1. k-NN
+
