@@ -20,7 +20,19 @@ Your solution should be hosted in a GitHub repository, which must include:
 
 Submit the link to your GitHub project. Ensure that version control is used throughout your work, allowing us to review your progress.
 
+## Benchmark `title`
 
+**Mean F1 score over 5-fold Monte Carlo CV**
+
+| Model | `hazard-category` | `product-category` | `hazard` | `product` |
+| ---: | ---: | ---: | ---: | ---: |
+| MAJORITY | 0.059  | 0.022 | 0.002 | 0.0 |
+| RANDOM | 0.063 | 0.031 | 0.004 | 0.0 |
+| TF-IDF-$k$=1-NN | 0.557 | 0.455 | 0.293 | 0.166 |
+| TF-IDF-SVM$^*$ | 0.617 | 0.565 | 0.323 | 0.205 |
+| TF-IDF-XGBOOST | ---: | ---: | ---: | ---: |
+
+$^*$ SVM C=10, gamma=0.1 and rbf kernel
 
 
 ## Results
@@ -128,5 +140,82 @@ Conclusion:
 For `HAZARD-CATEGORY`:
 ![alt text](image-3.png)
 
-For all labels, here is the performance of the three SVMs compared to k-NN for k=1:
+#### SVMs vs k-NN, k=1
 ![alt text](image-4.png)
+
+So SVMs were an improvement. 
+* For ST1 labels, SVM 0 (unscaled, C=10, gamma=0.1 and rbf kernel) definitely does better, although the difference from the other SVMs is small.
+* In `HAZARD`, SVMs do better than the kNN. SVM 1 in particular (linear kernel and C=1 with MaxAbsScaler) has less error and greater mean compared to the other two. 
+* But it is in `PRODUCT` that our SVMs make us proud! A 20% improvement from the kNN, $k=1$
+
+### 3. XGBoost
+
+Initializing an instance to gauge how it goes:
+```
+clf = XGBClassifier(tree_method='hist',
+                    n_jobs=-1,
+                    n_estimators=3, 
+                    max_depth=2, 
+                    learning_rate=1, 
+                    objective='multi:softmax',
+                )
+```
+Confusion matrix
+
+![alt text](image-5.png)
+
+Classification report
+
+|  | precision | recall | f1-score | support |
+| ---: | ---: | ---: | ---: | ---: |
+| allergens | 0.93 | 0.70 | 0.80 | 363 |
+| biological | 0.59 | 0.96 | 0.73 | 349 |
+| chemical | 0.61 | 0.34 | 0.44 | 65 |
+| food additives and flavourings | 0.67 | 0.50 | 0.57 | 4 |
+| foreign bodies | 0.84 | 0.65 | 0.73 | 105 |
+| fraud | 0.78 | 0.41 | 0.54 | 78 |
+| organoleptic aspects | 1.00 | 0.18 | 0.31 | 11 |
+| other hazard | 0.75 | 0.31 | 0.44 | 29 |
+| packaging defect | 0.50 | 0.08 | 0.13 | 13 |
+| accuracy |  |  | 0.71  | 1017 |
+| macro avg | 0.74 | 0.46 | 0.52 | 1017 |
+| weighted avg | 0.76 | 0.71 | 0.70 | 1017 |
+
+Let's try another model with a bit different parameters:
+```
+model = xgb.XGBClassifier(
+    objective='multi:softmax',  # For multi-class classification
+    num_class=len(label_encoder.classes_),
+    eval_metric='mlogloss',
+    use_label_encoder=False,
+    njobs=-1
+)
+```
+
+Accuracy: 0.8112094395280236
+
+![alt text](image-6.png)
+
+Confusion matrix
+
+![alt text](image-7.png)
+
+The second model achieved higher accuracy (0.81 vs 0.71) but lower macro F1 score: 0.50 vs 0.52.
+
+But this is just an observation, as infering which model does better we would need to measure the performance of both using cross validation over multiple folds.
+
+#### Using SMOTE to handle class imbalance (oversamlping)
+
+**SMOTE** (Synthetic Minority Oversampling Technique) is a method used to address class imbalance by **generating synthetic examples for the minority class**. The motivation for using SMOTE is to improve model performance on imbalanced datasets by providing the model with more balanced training data, which helps it learn the characteristics of underrepresented classes effectively.
+
+Accuracy: 0.816125860373648
+
+![alt text](image-8.png)
+
+#### Class Distribution with SMOTE (training set)
+
+We can see how SMOTE made the training set balanced, even for classes with one example.
+
+![alt text](image-9.png)
+
+But did it improve performance? Yes! The macro average jumped to 0.60!
